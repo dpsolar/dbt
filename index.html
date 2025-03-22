@@ -9,7 +9,9 @@
 <body>
 
   <nav>
-    <ul>
+    <div class="logo">☀ DP SOLAR</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#products">Products</a></li>
@@ -36,7 +38,7 @@
     <img src="images/inverter.jpeg" alt="Solar Inverter" />
     <img src="images/battery.jpeg" alt="Solar Battery" />
     <img src="images/light.jpg" alt="Solar Light" />
-    <img src="images/waterheater.jpeg" alt="Solar Water Heater" />
+    <img src="images/heater.jpeg" alt="Solar Water Heater" />
   </section>
 
   <section id="projects" class="projects">
@@ -51,6 +53,14 @@
     <p><strong>Ph:</strong> +91 6239842296, +91 9779178049</p>
     <p><strong>Email:</strong> dptradersbtl2018@gmail.com</p>
   </footer>
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 
 </body>
 </html>
